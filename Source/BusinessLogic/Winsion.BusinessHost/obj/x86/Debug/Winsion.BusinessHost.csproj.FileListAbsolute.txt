@@ -1,0 +1,4 @@
+G:\Winsion\Source\BusinessLogic\Winsion.BusinessHost\bin\Debug\Winsion.BusinessHost.exe
+G:\Winsion\Source\BusinessLogic\Winsion.BusinessHost\bin\Debug\Winsion.BusinessHost.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.BusinessHost\obj\x86\Debug\Winsion.BusinessHost.exe
+G:\Winsion\Source\BusinessLogic\Winsion.BusinessHost\obj\x86\Debug\Winsion.BusinessHost.pdb

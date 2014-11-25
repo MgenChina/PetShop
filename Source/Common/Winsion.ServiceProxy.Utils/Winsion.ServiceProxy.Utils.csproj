@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6883DCD7-4FB3-4A38-B53D-8288F2374FC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Winsion.ServiceProxy.Utils</RootNamespace>
+    <AssemblyName>Winsion.ServiceProxy.Utils</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Winsion.Core\WCF\Context\GenericContext.cs">
+      <Link>Context\GenericContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Winsion.Core\WCF\EndpointHelper.cs">
+      <Link>EndpointHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Winsion.ServiceModel.Share\Context\SecurityCallStackContext.cs">
+      <Link>Context\SecurityCallStackContext.cs</Link>
+    </Compile>
+    <Compile Include="..\Winsion.ServiceModel.Share\Security\SecurityCallFrame.cs">
+      <Link>Security\SecurityCallFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\Winsion.ServiceModel.Share\Security\SecurityCallStack.cs">
+      <Link>Security\SecurityCallStack.cs</Link>
+    </Compile>
+    <Compile Include="ChannelFactory\DuplexChannelFactory.cs" />
+    <Compile Include="ChannelFactory\HeaderChannelFactory.cs" />
+    <Compile Include="ChannelFactory\InstanceContext.cs" />
+    <Compile Include="ChannelFactory\InterceptorChannelFactory.cs" />
+    <Compile Include="ChannelFactory\SecurityCallStackChannelFactory.cs" />
+    <Compile Include="ChannelFactory\SecurityChannelFactory.cs" />
+    <Compile Include="Context\SecurityContext.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="IContract.cs" />
+    <Compile Include="Impl\DuplexProxy.cs" />
+    <Compile Include="Impl\Proxy.cs" />
+    <Compile Include="Impl\ProxyBase.cs" />
+    <Compile Include="Impl\SecurityProxy.cs" />
+    <Compile Include="Impl\ServiceFactory.cs" />
+    <Compile Include="IProxy.cs" />
+    <Compile Include="IServiceFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RESTClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RESTHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\BstarClaims.cs" />
+    <Compile Include="Security\BstarPrincipal.cs" />
+    <Compile Include="Security\UserContext.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "$(SolutionDir)..\..\Build\Common\" /Y
+IF NOT $(ConfigurationName) == Production copy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)..\..\Build\Common\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

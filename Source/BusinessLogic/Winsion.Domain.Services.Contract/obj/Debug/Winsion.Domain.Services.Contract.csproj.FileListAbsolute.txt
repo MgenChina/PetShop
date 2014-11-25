@@ -1,0 +1,4 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Services.Contract\bin\Debug\Winsion.Domain.Services.Contract.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Services.Contract\bin\Debug\Winsion.Domain.Services.Contract.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Services.Contract\obj\Debug\Winsion.Domain.Services.Contract.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Services.Contract\obj\Debug\Winsion.Domain.Services.Contract.pdb

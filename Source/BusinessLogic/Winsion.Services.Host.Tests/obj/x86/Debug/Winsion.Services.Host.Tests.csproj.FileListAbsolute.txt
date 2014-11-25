@@ -1,0 +1,4 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Host.Tests\bin\Debug\Winsion.Services.Host.Tests.exe
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Host.Tests\bin\Debug\Winsion.Services.Host.Tests.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Host.Tests\obj\x86\Debug\Winsion.Services.Host.Tests.exe
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Host.Tests\obj\x86\Debug\Winsion.Services.Host.Tests.pdb

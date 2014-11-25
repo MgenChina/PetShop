@@ -1,0 +1,15 @@
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Winsion.Core.Hibernate.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Winsion.Core.Hibernate.pdb
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Iesi.Collections.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\log4net.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\NHibernate.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Iesi.Collections.pdb
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Iesi.Collections.xml
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\log4net.xml
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\NHibernate.pdb
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\bin\Debug\NHibernate.xml
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\obj\x86\Debug\Winsion.Core.Hibernate.dll
+G:\Winsion\Source\Common\Winsion.Core.Hibernate\obj\x86\Debug\Winsion.Core.Hibernate.pdb

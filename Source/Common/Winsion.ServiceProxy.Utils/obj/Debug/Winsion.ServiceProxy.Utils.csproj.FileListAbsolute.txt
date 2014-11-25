@@ -1,0 +1,4 @@
+G:\Winsion\Source\Common\Winsion.ServiceProxy.Utils\bin\Debug\Winsion.ServiceProxy.Utils.dll
+G:\Winsion\Source\Common\Winsion.ServiceProxy.Utils\bin\Debug\Winsion.ServiceProxy.Utils.pdb
+G:\Winsion\Source\Common\Winsion.ServiceProxy.Utils\obj\Debug\Winsion.ServiceProxy.Utils.dll
+G:\Winsion\Source\Common\Winsion.ServiceProxy.Utils\obj\Debug\Winsion.ServiceProxy.Utils.pdb

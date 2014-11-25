@@ -1,0 +1,7 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\bin\Debug\Winsion.Domain.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\bin\Debug\Winsion.Domain.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\obj\Debug\Winsion.Domain.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain\obj\Debug\Winsion.Domain.pdb

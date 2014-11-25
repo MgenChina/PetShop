@@ -1,0 +1,4 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Alert.Services\bin\Debug\Winsion.Alert.Services.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Alert.Services\bin\Debug\Winsion.Alert.Services.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Alert.Services\obj\Debug\Winsion.Alert.Services.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Alert.Services\obj\Debug\Winsion.Alert.Services.pdb

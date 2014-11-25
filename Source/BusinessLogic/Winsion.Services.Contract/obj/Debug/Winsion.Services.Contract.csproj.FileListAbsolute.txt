@@ -1,0 +1,5 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Contract\bin\Debug\Winsion.Services.Contract.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Contract\bin\Debug\Winsion.Services.Contract.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Contract\obj\Debug\Winsion.Services.Contract.csprojResolveAssemblyReference.cache
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Contract\obj\Debug\Winsion.Services.Contract.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Services.Contract\obj\Debug\Winsion.Services.Contract.pdb

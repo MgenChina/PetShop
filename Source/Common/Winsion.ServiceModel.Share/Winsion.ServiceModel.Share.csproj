@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4AA33AD-D255-4281-ACD1-382E1DCD218D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Winsion.ServiceModel.Share</RootNamespace>
+    <AssemblyName>Winsion.ServiceModel.Share</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Dependencies\log4net\net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\..\..\Dependencies\prism\Desktop\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions">
+      <HintPath>..\..\..\Dependencies\prism\Desktop\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\Dependencies\Unity 2.1\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\Dependencies\Unity 2.1\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Winsion.Core">
+      <HintPath>..\Winsion.Core\bin\Debug\Winsion.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\SecurityCallStackContext.cs" />
+    <Compile Include="Context\SecurityContext.cs" />
+    <Compile Include="Interceptor\Base\OperationInterceptorBehaviorAttribute.cs" />
+    <Compile Include="Interceptor\Base\OperationInvoker.cs" />
+    <Compile Include="Interceptor\Base\ServiceInterceptorBehaviorAttribute.cs" />
+    <Compile Include="Interceptor\Security\SecurityCallStackInterceptor.cs" />
+    <Compile Include="Interceptor\Security\SecurityInterceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\SecurityCallFrame.cs" />
+    <Compile Include="Security\SecurityCallStack.cs" />
+    <Compile Include="Security\UserContext.cs" />
+    <Compile Include="UnityBehaviorExtensionElement.cs" />
+    <Compile Include="UnityInstanceProvider.cs" />
+    <Compile Include="UnityServiceBehaviorAttribute.cs" />
+    <Compile Include="UnityServiceHostFactory.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)../../Build/Common/"
+IF NOT $(ConfigurationName) == Production copy "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)../../Build/Common/"
+
+xcopy "$(TargetDir)Microsoft.Practices.Prism.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y
+xcopy "$(TargetDir)Microsoft.Practices.Prism.UnityExtensions.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y
+xcopy "$(TargetDir)Microsoft.Practices.ServiceLocation.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y
+xcopy "$(TargetDir)Microsoft.Practices.Unity.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y
+xcopy "$(TargetDir)log4net.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y
+xcopy "$(TargetDir)Winsion.Core.dll" "$(SolutionDir)..\..\Build\Common\Dependencies_Winsion.ServiceModel.Share\" /Y</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

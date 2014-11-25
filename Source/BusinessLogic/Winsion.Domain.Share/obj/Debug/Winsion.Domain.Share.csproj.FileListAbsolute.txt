@@ -1,0 +1,4 @@
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Share\bin\Debug\Winsion.Domain.Share.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Share\bin\Debug\Winsion.Domain.Share.pdb
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Share\obj\Debug\Winsion.Domain.Share.dll
+G:\Winsion\Source\BusinessLogic\Winsion.Domain.Share\obj\Debug\Winsion.Domain.Share.pdb
